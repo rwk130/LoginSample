@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ObeyYour.master.cs" Inherits="MovieList.ObeyYour" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>A simple set of pages written entirely by Richard W Kraemer</title>
+    <link href="mySample.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                Code available at <a href="https://github.com/rwk130" target="_blank">My GitHub</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

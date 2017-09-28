@@ -1,0 +1,108 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+/* For simplisity sake, I used only 4 columns instead of the standard 12 */
+.col-1 {
+    width: 25%;
+    padding: 5px;
+    float: left;
+}
+.col-2 {
+    width: 50%;
+    padding: 5px;
+    float: left;
+}
+.col-3 {
+    width: 75%;
+    padding: 5px;
+    float: left;
+}
+.col-4 {
+    width: 100%;
+    padding: 5px;
+    float: left;
+}/*resize for tablet*/
+@media only screen and (max-width: 1024px){
+    [class*="col-"]{
+        width: 50%;
+    }
+}
+/*resize for phone*/
+@media only screen and (max-width: 750px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 100%;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h2 {
+    font-size: .80em;
+}
+
+.redText {
+    color: red;
+}
+
+input[type=text] {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left:10px;
+    width: 100%;
+}
+
+input[type=password] {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+input[type=submit]{
+    border: 1px solid black;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+input[type=submit]:active {
+    border: 2px solid black;
+    color: #555555;
+    background-color: red;
+}
+
+input[type=submit]:disabled {
+    border: 1px solid #AAAAAA;
+    color: #555555;
+    background-color: #888888;
+}
